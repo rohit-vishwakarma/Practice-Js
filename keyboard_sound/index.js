@@ -12,6 +12,7 @@ function doAction(e){
         let innerBoxId = parseInt(innerBoxes[i].id);
         if(innerBoxId == code){
             changeStyle(innerBoxes[i]);
+            playAudio(innerBoxes[i]);
             // console.log(innerBoxes[i]);
             break;
         }
@@ -27,4 +28,10 @@ function changeStyle(e){
     setTimeout(function abc(){
         editBox.style = saveStyle;
     }, 300);
+}
+
+function playAudio(e){
+    let playBox = document.getElementById(e.id).children[1];
+    // console.log(playBox);
+    playBox.play()
 }
