@@ -1,25 +1,40 @@
 *{
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-image: url("https://i.pinimg.com/736x/3a/61/14/3a6114335e3ed586fb197ba602dff901.jpg");
-    background-size: 1300px 700px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .outerBox{
-    margin-top: 250px;
-    margin-bottom: 200px;
-    margin-left: 10px;
-    margin-right : 10px;
+    width: 100vw;
+    height: 100vh;
+    display: table-cell; 
+    vertical-align: middle;
 }
-.outerBox div{
-    display: inline;
-    margin: 10px;
-    border-radius: 2%;
-    background-color: orange;
-    padding: 40px;
+.container{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.outerBox div span{
-    font-size: 50px;
-    color: blue;
+
+.innerBox{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    padding: 10px 15px;
+    font-size: x-large;
+    color: white;
+    -webkit-box-shadow: 0 0 10px white;
+    box-shadow: 0  0 10px white; 
+    background-image: linear-gradient(to bottom right, rgb(12, 12, 117), rgba(255, 255, 255, 0.808));
 }
+
+
