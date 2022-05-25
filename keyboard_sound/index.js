@@ -1,8 +1,13 @@
 let innerBoxes = document.querySelectorAll(".innerBox");
 // console.log(innerBoxes);
-// for(let i=0; i<innerBoxes.length; i++){
-//     innerBoxes[i].addEventListener("keypress", doAction)
-// }
+for(let i=0; i<innerBoxes.length; i++){
+    innerBoxes[i].addEventListener("click", function clickingThroughMouse(){
+        // console.log(innerBoxes[i].id);
+        changeStyle(innerBoxes[i]);
+        playAudio(innerBoxes[i]);
+    });
+    // console.log(innerBoxes[i]);
+}
 
 document.addEventListener("keypress", doAction)
 function doAction(e){
@@ -20,6 +25,7 @@ function doAction(e){
 }
 
 function changeStyle(e){
+    // console.log(e);
     let editBox = document.getElementById(e.id);
     // console.log(editBox);
     let saveStyle = editBox.style;
