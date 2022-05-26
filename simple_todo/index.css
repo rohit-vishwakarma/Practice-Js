@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+}
+.container{
+    background-color: cadetblue;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#input-data{
+    display: inline;
+}
